@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Inscription
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{{ asset('css/register.css') }}" />
+{% endblock %}
+
+{% block body %}
+  <div class="app">
+    <div class="gauche">
+      <p class="commentaire">« J'ai décidé de suivre une formation en développement web pour approfondir mes connaissances. J'ai travaillé dur pendant plusieurs semaines, apprenant les bases du HTML, CSS et JavaScript, et j'ai finalement réussi à créer plusieurs sites web. »</p>
+      <p class="auteur">Marie - Freelance</p>
+      <img class="image" src="{{ asset('assets/images/femme_heureuse.png') }}" alt="Femme heureuse" />
+    </div>
+    
+    <div class="droit">
+        <p class="wii titre">ADRAR Classrooms</p>
+        <p class="bienvenue">Bienvenue</p>
+
+        <form action="" method="post" id="register_form">
+            <label for="register_email">E-mail</label>
+            <input class="register_input" type="email" name="register_email" id="register_email">
+            <label for="register_password">Mot de passe</label>
+            <input class="register_input" type="password" name="register_password" id="register_password">
+            <label for="register_repassword">Confirmer le mot de passe</label>
+            <input class="register_input" type="password" name="register_repassword" id="register_repassword">
+            <input type="submit" value="Se connecter" class="register_btn">
+        </form>
+    </div>
+  </div>
+{% endblock %}
