@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/inter.ttf");
+}
+
+@font-face {
+    font-family: "Continuum Bold";
+    src: url("../assets/fonts/contb.ttf");
+}
+
+html {
+    font-family: 'Inter';
+}
+
+.wii {
+    font-family: 'Continuum Bold';
+    color: #5584AC;
+}
+
+.titre {
+    font-size: 250%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.btn_inline {
+    background-color: #FFF;
+    color: #5584AC;
+    border-color: #5584AC;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.btn_outline {
+    background-color: #5584AC;
+    color: #FFF;
+    border-color: #FFF;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
