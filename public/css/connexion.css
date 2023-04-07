@@ -73,4 +73,19 @@
     border: none;
     color: #FFF;
     padding: 2%;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.separateur {
+    width: 30vw;
+    margin-top: 5vh;
+}
+
+.connnect-with {
+    position: absolute;
+    top: 53vh;
+    left: 21.2vw;
+    background-color: #000;
+    padding: 0 0.4vw;
 }

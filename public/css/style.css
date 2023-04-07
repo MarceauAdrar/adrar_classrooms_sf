@@ -44,3 +44,7 @@ body {
     border: 2px solid #FFF;
     border-radius: 5px;
 }
+
+.c-white {
+    color: #FFF;
+}
