@@ -12,6 +12,12 @@ html {
     font-family: 'Inter';
 }
 
+body {
+    min-height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .wii {
     font-family: 'Continuum Bold';
     color: #5584AC;
@@ -19,22 +25,22 @@ html {
 
 .titre {
     font-size: 250%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     text-align: center;
 }
 
 .btn_inline {
     background-color: #FFF;
     color: #5584AC;
-    border-color: #5584AC;
-    border-radius: 2px;
     padding: 5px 10px;
+    border: 2px solid #5584AC;
+    border-radius: 5px;;
 }
 
 .btn_outline {
     background-color: #5584AC;
     color: #FFF;
-    border-color: #FFF;
-    border-radius: 2px;
     padding: 5px 10px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
 }

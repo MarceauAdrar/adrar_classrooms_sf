@@ -49,15 +49,15 @@ nav a {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    height: 250px;
-    width: 100vw;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    text-align: center;
     background-color: #333;
 	color: #fff;
-	text-align: center;
 }
 
 footer p {
-    margin-top: 7%;
+    padding-top: 6%;
 }
