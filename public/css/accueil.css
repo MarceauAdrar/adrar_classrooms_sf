@@ -1,0 +1,63 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo_site {
+    margin-left: 10%;
+}
+
+header h1 {
+    margin-left: 1%;
+    font-size: 30px;
+}
+
+nav ul {
+    margin-left: 15%;
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.candidature {
+    background-color: #5584AC;
+    color: #fff;
+    height: 400px;
+}
+
+.candidature .img_etudiante {
+    position: absolute;
+    right: 5%;
+    bottom: 400px;
+}
+
+.presentation {
+    background-color: #000;
+    color: #fff;
+    height: 400px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    width: 100vw;
+    background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
+footer p {
+    margin-top: 7%;
+}

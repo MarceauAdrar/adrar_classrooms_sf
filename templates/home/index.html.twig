@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Accueil
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{{ asset('css/accueil.css') }}" />
+{% endblock %}
+
+{% block body %}
+  <header>
+    <img class="logo_site" src="{{ asset('assets/images/adrar_classrooms_logo.png') }}" alt="Logo du site" />
+    <h1 class="wii">Classrooms</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#">Formations</a>
+        </li>
+        <li>
+          <a href="#">Administration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="candidature">
+        <h2>Votre métier de demain, à portée de main</h2>
+        <p>Développez de nouvelles compétences dans le domaine de l’informatique et intégrer la formation de votre choix.</p>
+        <a href="#" class="btn_inline">Démarrer ma candidature</a>
+        <a href="#" class="btn_outline">Démarrer ma candidature</a>
+        <img src="{{ asset('assets/images/undraw_en_train_d_etudier.svg') }}" alt="Illustration étudiante qui étudie" class="img_etudiante"/>
+    </section>
+    <section class="presentation"></section>
+  </main>
+
+  <footer>
+    <p>2023 &copy; ADRAR Classrooms. Tous droits réservés.</p>
+  </footer>
+{% endblock %}
