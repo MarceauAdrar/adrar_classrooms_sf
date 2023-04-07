@@ -1,0 +1,76 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gauche {
+    float: left;
+    width: 50vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.droit {
+    float: right;
+    width: 50vw;
+    min-height: 100vh;
+    background-color: #8CC04D;
+}
+
+.image {
+    position: absolute;
+    bottom: 0;
+    left: 65%;
+}
+
+.commentaire {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.auteur {
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-style: italic;
+}
+
+.bienvenue {
+    margin-top: 15%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 250%;
+    color: #FFF;
+}
+
+#login_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 20%;
+}
+
+#login_form label {
+    color: #FFF;
+    margin-top: 3%;
+}
+
+#login_form .login_input {
+    margin-top: 1%;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+    height: 40px;
+    background-color: #000;
+    color: #D4D4D4;
+    font-size: 110%;
+}
+
+#login_form .login_btn {
+    margin-top: 2%;
+    background-color: #5584AC;
+    border: none;
+    color: #FFF;
+    padding: 2%;
+}
