@@ -42,6 +42,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'utilisateur', targetEntity: UtilisateursChapitres::class, orphanRemoval: true)]
     private Collection $utilisateursChapitres;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $googleId = null;
+
     public function __construct()
     {
         $this->utilisateursChapitres = new ArrayCollection();
@@ -184,6 +187,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $utilisateursChapitre->setUtilisateur(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getGoogleId(): ?string
+    {
+        return $this->googleId;
+    }
+
+    public function setGoogleId(?string $googleId): self
+    {
+        $this->googleId = $googleId;
 
         return $this;
     }
