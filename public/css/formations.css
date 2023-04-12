@@ -1,0 +1,35 @@
+body {
+    background-color: #5584AC;
+}
+
+.card {
+    background-color: #000000;
+    margin: 5rem;
+    border-radius: 5px;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 10px 5px 5px #316c9e;
+}
+
+.presentation-cours-img {
+    padding: 24px 0 24px 30px;
+}
+
+.presentation-cours-img img {
+    height: 182px;
+    aspect-ratio: 2/1;
+}
+
+.presentation-cours-text {
+    padding-top: 24px; 
+}
+
+.card-icons, .card-synopsis {
+    padding-top: 1rem;
+}
