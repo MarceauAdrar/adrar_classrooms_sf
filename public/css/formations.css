@@ -4,12 +4,11 @@ body {
 
 .card {
     background-color: #000000;
-    margin: 5rem;
+    margin: 1rem 5rem;
     border-radius: 5px;
     height: 25vh;
     display: grid;
     grid-template-columns: 0.35fr 1fr;
-    color: #FFF;
     cursor: pointer;
 }
 

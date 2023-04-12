@@ -1,6 +1,5 @@
 header {
     background-color: #333;
-    color: #fff;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -26,13 +25,11 @@ nav li {
 }
 
 nav a {
-    color: #fff;
     text-decoration: none;
 }
 
 .candidature {
     background-color: #5584AC;
-    color: #fff;
     height: 400px;
 }
 
@@ -44,7 +41,6 @@ nav a {
 
 .presentation {
     background-color: #000;
-    color: #fff;
     height: 400px;
 }
 
@@ -55,7 +51,6 @@ footer {
     margin-top: -200px;
     text-align: center;
     background-color: #333;
-	color: #fff;
 }
 
 footer p {

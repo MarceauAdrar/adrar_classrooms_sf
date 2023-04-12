@@ -68,3 +68,11 @@ body {
 .pt-5 {
     padding-top: 5vh;
 }
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}

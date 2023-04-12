@@ -19,7 +19,7 @@
 
   {% for formation in cours %}
     {% set nom = formation.titre|lower|replace({ ' ': '-', 'à': 'a' }) %}
-    <div class="card" onclick="window.location.href = '{{ path('app_cours_nom', { nom: nom }) }}'">
+    <div class="card c-white" onclick="window.location.href = '{{ path('app_cours_nom', { nom: nom }) }}'">
       <div class="presentation-cours-img">
         <img src="{{ asset('assets/images/cours/' ~ formation.image) }}" alt="Image de présentation du cours {{ formation.titre }}" />
       </div>
