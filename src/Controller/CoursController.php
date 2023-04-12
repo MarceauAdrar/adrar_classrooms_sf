@@ -25,9 +25,11 @@ class CoursController extends AbstractController
     public function cours(string $nom, CoursRepository $coursRepository, ChapitresRepository $chapitresRepository): Response
     {
         $cours = $coursRepository->findOneBy(['titre' => ucfirst(str_replace("-", " ", $nom))]);
+        $chapitres = $chapitresRepository->findBy(['cours' => $cours->getId()]);
 
         return $this->render('cours/cours.html.twig', [
             'cours' => $cours,
+            'chapitres' => $chapitres,
         ]);
     }
 }
