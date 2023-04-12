@@ -19,16 +19,29 @@
     <div class="droit">
         <p class="wii titre">ADRAR Classrooms</p>
         <p class="bienvenue">Bienvenue</p>
+        
+        {{ form_start(registrationForm) }}
+            {{ form_row(registrationForm.prenom, {
+                label: 'Prenom', 
+            }) }}
+            {{ form_row(registrationForm.nom, {
+                label: 'Nom', 
+            }) }}
+            {{ form_row(registrationForm.email, {
+                label: 'E-mail', 
+            }) }}
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Mot de passe', 
+            }) }}
+            {{ form_row(registrationForm.plainPasswordBis, {
+                label: 'Confirmer le mot de passe', 
+            }) }}
+            {{ form_row(registrationForm.image, {
+                label: 'Votre photo de profil', 
+            }) }}
 
-        <form action="" method="post" id="register_form">
-            <label for="register_email">E-mail</label>
-            <input class="register_input" type="email" name="register_email" id="register_email">
-            <label for="register_password">Mot de passe</label>
-            <input class="register_input" type="password" name="register_password" id="register_password">
-            <label for="register_repassword">Confirmer le mot de passe</label>
-            <input class="register_input" type="password" name="register_repassword" id="register_repassword">
-            <input type="submit" value="Se connecter" class="register_btn">
-        </form>
+            <button type="submit" class="register-btn">S'enregistrer</button>
+        {{ form_end(registrationForm) }}
     </div>
   </div>
 {% endblock %}

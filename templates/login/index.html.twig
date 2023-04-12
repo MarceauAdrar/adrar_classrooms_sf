@@ -11,20 +11,31 @@
 {% block body %}
   <div class="app">
     <div class="gauche">
-        <p class="wii titre pt-3">ADRAR Classrooms</p>
-        <p class="bienvenue">Bienvenue</p>
+      <p class="wii titre pt-3">ADRAR Classrooms</p>
+      <p class="bienvenue">Bienvenue</p>
 
-        <form action="" method="post" id="login_form">
-            <label for="login_email">E-mail</label>
-            <input class="login_input" type="email" name="login_email" id="login_email">
-            <label for="login_password">Mot de passe</label>
-            <input class="login_input" type="password" name="login_password" id="login_password">
-            <input type="submit" value="Se connecter" class="login_btn c-white">
-        </form>
-        <hr class="separateur" />
-        <div class="connnect-with"><p class="c-white">ou continuer avec</p></div>
+      <form method="post">
+        {% if error %}
+          <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail">Email</label>
+        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="login-input" autocomplete="email" required autofocus />
+        <label for="inputPassword">Password</label>
+        <input type="password" name="password" id="inputPassword" class="login-input" autocomplete="current-password" required />
+
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" />
+
+        <button class="login-btn c-white" type="submit">Se connecter</button>
+      </form>
+
+      <hr class="separateur" />
+      <div class="connnect-with">
+        <p class="c-white">ou continuer avec</p>
+      </div>
     </div>
-    
+
     <div class="droit">
       <p class="commentaire">« J'étais musicien indépendant, mais la COVID a tout stoppé. On m’a parlé d’ADRAR Classrooms, ça m'a ouvert des opportunités professionnelles insoupçonnées. »</p>
       <p class="auteur">Alexandre - Développeur Full-Stack Junior</p>

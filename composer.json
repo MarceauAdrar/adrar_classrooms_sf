@@ -47,7 +47,7 @@
     },
     "config": {
         "platform": {
-            "php": "8.2.1"
+            "php": "8.2.2"
         },
         "allow-plugins": {
             "php-http/discovery": true,

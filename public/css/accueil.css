@@ -1,33 +1,3 @@
-header {
-    background-color: #333;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-header .logo_site {
-    margin-left: 10%;
-}
-
-header h1 {
-    margin-left: 1%;
-    font-size: 30px;
-}
-
-nav ul {
-    margin-left: 15%;
-    display: flex;
-}
-
-nav li {
-    list-style: none;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-}
-
 .candidature {
     background-color: #5584AC;
     height: 400px;
@@ -42,17 +12,4 @@ nav a {
 .presentation {
     background-color: #000;
     height: 400px;
-}
-
-footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
-    text-align: center;
-    background-color: #333;
-}
-
-footer p {
-    padding-top: 6%;
 }

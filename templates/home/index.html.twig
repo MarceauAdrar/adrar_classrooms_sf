@@ -12,16 +12,23 @@
   <header class="c-white">
     <img class="logo_site" src="{{ asset('assets/images/adrar_classrooms_logo.png') }}" alt="Logo du site" />
     <p class="wii titre">Classrooms</p>
-    <nav class="c-white">
+    <nav class="navbar">
       <ul>
         <li>
-          <a href="#">Accueil</a>
+          <a class="c-white" href="#">Accueil</a>
         </li>
         <li>
-          <a href="{{ path('app_cours') }}">Formations</a>
+          <a class="c-white" href="{{ path('app_cours') }}">Formations</a>
         </li>
         <li>
-          <a href="#">Administration</a>
+          <a class="c-white" href="#">Administration</a>
+        </li>
+        <li>
+          {% if app.user is not empty %}
+            <a class="c-white" href="#">{{ app.user.prenom|capitalize }}&nbsp;{{ app.user.nom|upper }}</a>
+          {% else %}
+            <a class="c-white" href="{{ path('app_login') }}">Se connecter</a>
+          {% endif %}
         </li>
       </ul>
     </nav>
@@ -31,7 +38,7 @@
         <h2>Votre métier de demain, à portée de main</h2>
         <p>Développez de nouvelles compétences dans le domaine de l’informatique et intégrer la formation de votre choix.</p>
         <a href="#" class="btn_inline">Démarrer ma candidature</a>
-        <a href="#" class="btn_outline">Démarrer ma candidature</a>
+        <a href="#" class="btn_outline c-white">Démarrer ma candidature</a>
         <img src="{{ asset('assets/images/undraw_en_train_d_etudier.svg') }}" alt="Illustration étudiante qui étudie" class="img_etudiante"/>
     </section>
     <section class="presentation c-white"></section>

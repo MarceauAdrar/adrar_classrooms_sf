@@ -15,7 +15,7 @@ class CoursFixtures extends Fixture
 
     public function load(ObjectManager $manager): void
     {
-        $cours = $this->createCourse("Introduction à l'HTML", "Ce cours est une introduction au langage de balisage HTML (HyperText Markup Language).", 1, 60, "html.jpg", new DateTimeImmutable(), 1, $manager);
+        $cours = $this->createCourse("Introduction à l'HTML", "Ce cours est une introduction au langage de balisage HTML (HyperText Markup Language).", 1, 60, "default.jpg", new DateTimeImmutable(), 1, $manager);
         $this->createChapter($cours, "Introduction", "<h2>Introduction</h2><p>HTML (HyperText Markup Language) est un langage de balisage utilisé pour créer des pages Web. Il permet de structurer le contenu d'une page en utilisant des balises HTML.</p>", 1, $manager);
         $this->createChapter($cours, "Structure", "<h2>Structure d'une page HTML</h2>
         <p>Une page HTML est composée de plusieurs éléments, tels que :</p>
@@ -37,7 +37,7 @@ class CoursFixtures extends Fixture
         $this->createChapter($cours, "Mise en page", "<h2>Mise en page avec CSS</h2>
         <p>CSS (Cascading Style Sheets) permet de définir la présentation visuelle d'une page HTML. Il permet de modifier les couleurs, les tailles, les polices de caractères, les marges, etc.</p>", 4, $manager);
         
-        $cours = $this->createCourse("Introduction au PHP", "Le PHP est un langage de programmation côté serveur qui est utilisé pour créer des sites web dynamiq", 2, 140, "php.jpg", new DateTimeImmutable(), 1, $manager);
+        $cours = $this->createCourse("Introduction au PHP", "Le PHP est un langage de programmation côté serveur qui est utilisé pour créer des sites web dynamiq", 2, 140, "default.jpg", new DateTimeImmutable(), 1, $manager);
         $this->createChapter($cours, "Introduction", '<?php
         // Exemple de code PHP
         $prenom = "Jean";

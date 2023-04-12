@@ -46,18 +46,22 @@
     color: #FFF;
 }
 
-#register_form {
+form {
     display: flex;
     flex-direction: column;
     margin: 0% 20%;
 }
 
-#register_form label {
+form div {
+    display: grid;
+}
+
+form label {
     color: #FFF;
     margin-top: 3%;
 }
 
-#register_form .register_input {
+form .register-input {
     margin-top: 1%;
     border: 1px solid #D4D4D4;
     border-radius: 3px;
@@ -67,7 +71,7 @@
     font-size: 110%;
 }
 
-#register_form .register_btn {
+form .register-btn {
     margin-top: 2%;
     background-color: #5584AC;
     border: none;
