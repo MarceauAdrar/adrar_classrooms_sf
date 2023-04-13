@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="{{ asset('css/connexion.css') }}" />
 {% endblock %}
 
+{% block js %}
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+{% endblock %}
+
 {% block body %}
   <div class="app">
     <div class="gauche">
@@ -33,6 +37,9 @@
       <hr class="separateur" />
       <div class="connnect-with">
         <p class="c-white">ou continuer avec</p>
+        <div id="g_id_onload" data-client_id="986443914291-6tsqat1qjkv8md9rd4mn676hen0vbnof.apps.googleusercontent.com" data-context="use" data-ux_mode="popup" data-login_uri="https://localhost:8000/google/" data-nonce="" data-auto_prompt="false"></div>
+
+        <div class="g_id_signin" data-type="icon" data-shape="square" data-theme="outline" data-text="signin_with" data-size="large" data-locale="fr"></div>
       </div>
     </div>
 
