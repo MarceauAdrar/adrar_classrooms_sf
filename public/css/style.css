@@ -51,6 +51,10 @@ body {
     color: #000 !important;
 }
 
+.bg-blue {
+    background-color: #5584AC !important;
+}
+
 .pt-1 {
     padding-top: 1vh;
 }

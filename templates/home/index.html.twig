@@ -20,9 +20,11 @@
         <li>
           <a class="c-white" href="{{ path('app_cours') }}">Formations</a>
         </li>
+        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_DEV') %}
         <li>
-          <a class="c-white" href="#">Administration</a>
+          <a class="c-white" href="{{ path('app_admin') }}">Administration</a>
         </li>
+        {% endif %}
         <li>
           {% if app.user is not empty %}
             <a class="c-white" href="#">{{ app.user.prenom|capitalize }}&nbsp;{{ app.user.nom|upper }}</a>

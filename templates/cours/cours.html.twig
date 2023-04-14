@@ -1,18 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ cours.titre }}{% endblock %}
+{% block title %}
+  {{ cours.titre }}
+{% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="{{ asset('css/cours.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/cours.css') }}" />
 {% endblock %}
 
 {% block js %}
-    <script src="{{ asset('js/cours.js') }}" />
+  <script src="{{ asset('js/cours.js') }}"></script>
 {% endblock %}
 
 {% block body %}
-{# {{dump(cours)}}
-<hr>
-<hr>
-{{dump(chapitres)}} #}
+  <section class="cours-presentation bg-blue">
+    <h1>{{ cours.titre }}</h1>
+  </section>
+  <section>
+    <div class="cours-progression">
+      <img src="{{ asset('assets/icons/house-circle.png') }}" alt="Icône de maison reflétant la page de garde du cours" />
+      {% for chapitre in chapitres %}
+        <span class="chapitre-indicateur"></span>
+      {% endfor %}
+      <img src="{{ asset('assets/icons/certificate-circle.png') }}" alt="Icône de bulle reflétant le certificat obtensible en fin de formation" />
+    </div>
+    <h2>{{ chapitres[0].titre }}</h2>
+  </section>
 {% endblock %}

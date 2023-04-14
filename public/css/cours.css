@@ -1,0 +1,21 @@
+.cours-presentation {
+    height: 25vh;
+    padding: 5vh 25vw 0 25vw;
+}
+
+.cours-progression {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    
+.chapitre-indicateur {
+    background-color: #D9D9D9;
+    width: 20px;
+    height: 15px;
+    border: 1px solid #000;
+    border-top: 0;
+    border-bottom-width: 2px;
+}
