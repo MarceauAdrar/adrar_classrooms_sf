@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
   </head>
   <body>
-   {{ render_chart(chart) }}
     <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
       <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
       <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
@@ -413,7 +412,30 @@
         </section>
       </div>
     </section>
-    <script src="{{ asset('assets/js/chart.js') }}" type="module"></script>
     <script src="{{ asset('js/admin.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js" integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      const ctx = document.getElementById('myChart')
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [
+            {
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      })
+    </script>
   </body>
 </html>
