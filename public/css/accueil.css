@@ -1,15 +1,31 @@
 .candidature {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.candidature > div {
+    display: block;
+}
+.candidature, .avis {
     background-color: #5584AC;
-    height: 400px;
+    height: 290px;
+    padding: 5vw;
+    padding-bottom: 20px;
 }
 
 .candidature .img_etudiante {
+    z-index: 1;
     position: absolute;
-    right: 5%;
-    bottom: 400px;
 }
 
 .presentation {
     background-color: #000;
     height: 400px;
+    z-index: 2;
+    position: relative;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }

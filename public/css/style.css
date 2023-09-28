@@ -10,6 +10,7 @@
 
 html {
     font-family: 'Inter';
+    font-size: 20px;
 }
 
 body {
@@ -25,22 +26,39 @@ body {
 
 .titre {
     font-size: 250%;
-    text-align: center;
 }
-
-.btn_inline {
+h3 {
+    font-weight: 500;
+    font-size: 1.75em;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+.btn-connexion {
+    border: 2px solid #5584AC;
+    padding: 1.25em;
+    display: inline-block;
+    margin-right: 10%;
+}
+.btn-inline {
+    margin-top: 10vh;
     background-color: #FFF;
     color: #5584AC;
-    padding: 5px 10px;
     border: 2px solid #5584AC;
-    border-radius: 5px;;
+    display: inline-block;
 }
-
-.btn_outline {
+.btn-outline {
+    margin-top: 10vh;
     background-color: #5584AC;
-    padding: 5px 10px;
     border: 2px solid #FFF;
-    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+}
+.pull-right {
+    float: right !important;
 }
 
 .c-white {
@@ -51,28 +69,71 @@ body {
     color: #000 !important;
 }
 
+.c-blue {
+    color: #5584AC !important;
+}
+
 .bg-blue {
     background-color: #5584AC !important;
 }
 
+.bg-black {
+    background-color: #000 !important;
+}
+
 .pt-1 {
-    padding-top: 1vh;
+    padding-top: 1vh !important;
+}
+.p-1 {
+    padding: 1vh !important;
 }
 
 .pt-2 {
-    padding-top: 2vh;
+    padding-top: 2vh !important;
+}
+.p-2 {
+    padding: 2vh !important;
 }
 
 .pt-3 {
-    padding-top: 3vh;
+    padding-top: 3vh !important;
+}
+.p-3 {
+    padding: 3vh !important;
 }
 
 .pt-4 {
-    padding-top: 4vh;
+    padding-top: 4vh !important;
+}
+.p-4 {
+    padding: 4vh !important;
 }
 
 .pt-5 {
-    padding-top: 5vh;
+    padding-top: 5vh !important;
+}
+.p-5 {
+    padding: 5vh !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#back_to_top {
+    position: absolute;
+    background-color: #5584AC;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -91,10 +152,13 @@ header h1 {
     font-size: 30px;
 }
 
-nav ul {
+.navbar {
     margin-left: 15%;
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: -webkit-fill-available;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -109,14 +173,13 @@ nav a {
 
 footer {
     clear: both;
-    position: absolute;
+    position: relative;
     height: 200px;
-    text-align: center;
     background-color: #333;
     width: 100%;
     bottom: 0;
 }
 
 footer p {
-    padding-top: 6%;
+    padding-top: 4.5%;
 }
